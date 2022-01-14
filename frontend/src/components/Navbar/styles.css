@@ -1,0 +1,29 @@
+/*O align items vai alinhar de acordo com o informado, que nesse caso é o "centro"*/
+header {
+    background-color: var(--color-primary);
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+/*Utilizando o Display flex, toda classe ficará uma ao lado da outra e não abaixo*/
+.mykamovie-nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f0f0f0;
+}
+
+.mykamovie-nav-content h1{
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+}
+.mykamovie-contact-container{
+    display: flex;
+    align-items: center;
+}
+.mykamovie-contact-link{
+    margin: 0 0 0 10px;
+    font-size: 14px;
+}
