@@ -1,13 +1,17 @@
 import MovieStars from "components/MovieStars";
 import './styles.css';
-function MovieScore() {
 
-    const score = 3.5;
-    const count = 13;
+type Props = {
+    score: number;
+    count: number;
+}
+
+function MovieScore({ score, count } : Props) {
+ 
     return (
         <div className="mykamovie-score-container">
             <p className="mykamovie-score-value">{score > 0 ? score.toFixed(1) : '-'}</p>
-            <MovieStars />
+            <MovieStars  score = {score}/>
             <p className="mykamovie-score-count">{count} avaliações</p>
         </div>
     );
